@@ -3,9 +3,7 @@
 <head>
   <style>
     body {
-      background-color: #d6a8ff;
-      margin: 0;
-      padding: 0;
+      background-color: #d9b3ff;
     }
 
     .box {
@@ -13,38 +11,68 @@
       text-align: center;
     }
 
+    h1 {
+      margin-bottom: 30px;
+    }
+
     .image-row {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      gap: 10px;
+      padding: 0 10px;
+    }
+
+    .image-row a {
+      width: 24%;
     }
 
     .image-row img {
-      width: 24%; /
-      margin-bottom: 10px;
-      height: auto;
-      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .more-details {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
 
     @media (max-width: 600px) {
-      .image-row img {
-        width: 100%; 
-		}
-		
+      .image-row a {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="box">
     <h1>Cakes and Bakes</h1>
+
     <div class="image-row">
-      <img src="RedVelvetCake.jpg" alt="Red Velvet Cake">
-      <img src="ChocolateBrownie.jpg" alt="Chocolate Brownie">
-      <img src="ChocoFudgeCake.jpg" alt="Choco Fudge Cake">
-      <img src="ChocolateGateau.jpg" alt="Chocolate Gateau">
+      <a href="https://en.wikipedia.org/wiki/Red_velvet_cake" target="_blank">
+        <img src="RedVelvetCake.jpg" alt="Red Velvet Cake">
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Chocolate_brownie" target="_blank">
+        <img src="ChocolateBrownie.jpg" alt="Chocolate Brownie">
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Fudge_cake" target="_blank">
+        <img src="ChocoFudgeCake.jpg" alt="Choco Fudge Cake">
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Chocolate_cake" target="_blank">
+        <img src="ChocolateGateau.jpg" alt="Chocolate Gateau">
+      </a>
     </div>
-	
-	    <hr style="border: 1px solid black; width: 100%;">
+    <hr style="border: 1px solid black; width: 100%;">
 
     <p style="text-align: center;">
       Enjoy <del>5%</del> <ins>10%</ins> Discount on Delivery Fees when ordering Cakes! Call us for further details!
