@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Cakes and Bakes</title>
   <style>
-    body {
-      background-color: #d6a8ff;
-      margin: 0;
-      padding: 0;
-    }
-
     .box {
-      padding: 20px;
-      text-align: center;
+      background-color: #d9b3ff;
+      padding: 10px;
     }
 
     .image-row {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .image-row img {
-      width: 24%; /* 4 images per row with small gaps */
-      margin-bottom: 10px;
-      height: auto;
-      box-sizing: border-box;
+      height: 300px;
+      margin-right: 10px;
+	  box-sizing: border-box;
     }
-
+   
     @media (max-width: 600px) {
       .image-row img {
-        width: 100%; /* Stack on small screens */
+        width: 100%; 
       }
-    }
+
   </style>
 </head>
 <body>
 
   <div class="box">
-    <h1>Cakes and Bakes</h1>
+    <h1 style="text-align: center;">Cakes and Bakes</h1>
+
     <div class="image-row">
       <img src="RedVelvetCake.jpg" alt="Red Velvet Cake">
       <img src="ChocolateBrownie.jpg" alt="Chocolate Brownie">
       <img src="ChocoFudgeCake.jpg" alt="Choco Fudge Cake">
       <img src="ChocolateGateau.jpg" alt="Chocolate Gateau">
     </div>
+
+    <hr style="border: 1px solid black; width: 100%;">
+
+    <p style="text-align: center;">
+      Enjoy <del>5%</del> <ins>10%</ins> Discount on Delivery Fees when ordering Cakes! Call us for further details!
+    </p>
+	
+	    <hr style="border: 1px solid black; width: 100%;">
+
+
+    <h2 style="text-align: center;">Cakes and Bakes</h2>
+    <div style="text-align: center;">
+     <p>Tel : +9411 - 2234433<br>  +9411 - 2234444</p>
+	 <p><i>N0.21<br>Harris Street<br>Colombo 10<br>Sri Lanka</i></p>
+    </div>
+
   </div>
 
 </body>
